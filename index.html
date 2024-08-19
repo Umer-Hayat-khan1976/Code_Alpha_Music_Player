@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="player-container">
+        
+        <div class="playlist">
+            <input type="text" id="searchInput" placeholder="Search for music...">
+            <h3>Playlist</h3>
+            <ul id="playlist">
+                <!-- Add your song items here -->
+                <li data-src="songs/the-adventures-of-mr-hardy_30sec-175535.mp3">The-adventures-of-mr-hardy</li>
+                <li data-src="songs/type-beat-demeszer-prod-by-yoshybeats-213712.mp3">Type-beat-demeszer-prod-by-yoshybeats</li>
+                <li data-src="songs/us-drill-prod-by-yoshybeats-194143.mp3">US-drill-prod-by-yoshybeats</li>
+            </ul>
+        </div>
+        <div class="player">
+            <div class="controls">
+                <button id="prevBtn">⏮️</button>
+                <button id="playPauseBtn">▶️</button>
+                <button id="nextBtn">⏭️</button>
+            </div>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.01">
+            <div id="nowPlaying">Now Playing: None</div>
+        </div>
+    </div>
+    <audio id="audioPlayer"></audio>
+    <script src="./script.js"></script>
+</body>
+</html>

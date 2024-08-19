@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(204, 203, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 500px;
+}
+
+.playlist {
+    background-color: rgb(19, 19, 20);
+    color: #ffffff;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#searchInput {
+    width: 85%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.playlist h3 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.playlist ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.playlist li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: background-color 0.3s;
+}
+
+.playlist li:hover {
+    background-color: #a80aa077;
+}
+
+.player {
+    padding: 20px;
+    text-align: center;
+    
+    background-image: url("./images/bg1.jpg");
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 15rem;
+}
+
+.controls button {
+    background-color: #383838;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: rgb(194, 21, 136);
+    
+}
+
+#volumeControl {
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+#nowPlaying {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .player-container {
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+    .playlist {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .player {
+        width: 60%;
+        padding: 20px;
+    }
+}
+
+
